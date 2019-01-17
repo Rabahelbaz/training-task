@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DMS </title>
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/font-awesome.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" />
+        <div id="user-name">
+            Hi John
+            <img id="user-img" src="user.jpg" alt="imageUser" />
+
+        </div>
+    </div>
+    <section>
+        <nav>
+            <div id="menu-icon">
+                <i class="fa fa-chevron-circle-left"></i>
+            </div>
+            <ul>
+                <li><i class="fa fa-home"></i> <a href="#">HOME</a></li>
+                <li><i class="fa fa-building"></i><a href="#">COMPANY</a></li>
+                <li><i class="fa fa-user-plus"></i><a href="#">CUSTOMERS</a></li>
+            </ul>
+        </nav>
+
+        <div id="page-content">
+            <div class="sid-Bar">
+                <div class="page-title"> PAGE TITLE </div>
+                <div class="page-tools">
+                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-plus-circle"></i>
+                    <i class="fa fa-trash"></i>
+                    <i class="fa fa-print"></i>
+                    <i class="fa fa-cog"></i>
+                </div>
+            </div>
+            <div>
+                <article>
+                    <div class="flex-container">
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Label</label><br />
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <br />
+                    <button id="button" type="submit" form="nameform" value="Submit">Submit</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu-icon > i").click(function () {
+                if ($('nav ul a').css('display') != 'none') {
+                    $("nav ul a").hide();
+                    $("nav").css('width', '3%');
+                    $("#page-content").css('width', '97%');
+                } else {
+                    $("nav ul a").show();
+                    $("nav").css('width', '15%');
+                    $("#page-content").css('width', '85%');
+
+                }
+
+            });
+
+        });
+    </script>
+
+
+</body>
+</html>

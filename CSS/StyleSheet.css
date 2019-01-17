@@ -1,0 +1,178 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the header */
+.header {
+    background-color: black;
+    padding: 10px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:flex-start;
+    
+    
+}
+#user-img{
+    width:60px;
+    display:block;
+    float:right;
+    border-radius:50%;
+}
+#user-name{
+    color:white;
+    margin:20px;
+    float:right;
+    
+    
+}
+#page-content {
+    background-color:white;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 10px;
+    float:right;
+    width:85%;
+}
+#page-content >div{
+    width:100%;
+}
+articale{
+    min-width:100%;
+}
+.sid-Bar{
+    background-color:gray;
+    padding:20px;
+    height:50px;
+    text-align:right; 
+
+    
+}
+.page-title{
+    float:left;
+    color:white;
+}
+.page-tools{
+    float:right;
+    color:white;
+
+}
+
+/* Container for flexboxes */
+section {
+    width:100%;
+    height:100%;
+    position:relative;
+        
+}
+
+article{
+   
+    padding: 10px;
+    margin:3px;
+    /*border: solid red 2px;*/
+}
+/* Style the navigation menu */
+nav {
+  -webkit-box-flex:1;
+    background-color:black;
+    padding: 20px;
+    height:100%;
+    width:15%;
+    position:absolute;
+    float:left;
+    height:100%;
+
+
+}
+#menu-icon {
+    text-align:right;
+    font-size:larger;
+    color:white;
+    margin-bottom:5px;
+}
+#menu-icon i{
+    cursor:pointer;
+}
+
+
+input{
+    border-radius:5px;
+    height:30px;
+    width:70%;
+    
+}
+/* Style the list inside the menu */
+nav ul a {
+    list-style-type: none;
+    text-decoration:none;
+    padding: 0;
+    color:white;
+    
+}
+ul{
+    list-style-type: none;
+
+}
+li{
+    padding:5px;
+    color:white;
+}
+  
+/* Style the content */
+
+.flex-container >div {
+  flex-direction:row;
+  justify-content:space-between;
+  width:33%;
+  float:left;
+
+
+}
+#button {
+    width: 100px;
+    height: 41px;
+    border-radius: 2px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9px 135px;
+    cursor: pointer;
+    float: right;
+}
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+
